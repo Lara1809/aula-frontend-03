@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #texto {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consulta de Usuários</h1>
+    <li><a href="#" onclick="mostrarTexto()">usuaro 1</a></li>
+    <li><a href="#" onclick="mostrarTexto()">usuaro 2</a></li>
+    <li><a href="#" onclick="mostrarTexto()">usuaro 3</a></li>
+    <li><a href="#" onclick="mostrarTexto()">usuaro 4</a></li>
+    <li><a href="#" onclick="mostrarTexto()">usuaro 5</a></li>
+    <p id="texto"><br> nome <br> telefone <br> nacionalidade <br></p>
+    <script>
+        function mostrarTexto() {
+            var texto = document.getElementById("texto");
+            texto.style.display = "block"
+        }
+    </script>
+  
+</body>
+</html>
